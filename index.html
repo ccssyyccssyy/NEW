@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 이서윤체 폰트 적용을 위한 코드 */
+        @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+        /* body태그 자체에 css 요소 부여 */
+        body {
+            font-family: "LeeSeoyun";
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url("amelia-barklid-CUmCByAhXyQ-unsplash.jpg");
+        }
+
+        .container {
+            width: 398px;
+            background-color: black;
+            height: 100%;
+        }
+
+        .photos {
+            margin-top: 30px;
+
+        }
+        
+        .photo-frame {
+            background-color: white;
+            margin: 15px 20px;
+            height: 200px;
+
+            background-size: cover;
+            position: relative;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .f-title {
+            color: white;
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        .f-date {
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        #image1 {
+            background-image: url("ivana-cajina-LlDQPnErFxo-unsplash.jpg");
+        }
+
+        #image2 {
+            background-image: url('alex-dukhanov-uhRgPO215cE-unsplash.jpg');
+        }
+
+        #image3 {
+            background-image: url("alexandra-diaconu-VuBzplNNi0k-unsplash.jpg")
+        }
+
+        #image4 {
+            background-image: url("jakob-owens-8tyCOqTqdqg-unsplash.jpg");
+        }
+
+        .photo_description {
+            color: white;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                I
+                </span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desc2" class="photo_description">
+                My
+                </span>
+            </div>
+            <div id="image3" class="photo-frame">
+                <span id="desc3" class="photo_description">
+                Me 
+                </span>
+            </div>
+            <div id="image4" class="photo-frame">
+                <span id="desc4" class="photo_description">
+                Mine  
+            </span>
+        </div>
+        </div>
+        <div class="footer">
+            <p class="f-title">My Life</p>
+            <p class="f-date"> April 20, 1993 - Present</p>
+        </div>
+    </div>
+</body>
+</html>
